@@ -8,7 +8,8 @@ RUN apt-get update -qq && \
             libreadline-dev \
             zlib1g-dev \
             curl \
-            git && \
+            git \
+            tzdata && \
     apt-get clean -qq -y && \
     apt-get autoclean -qq -y && \
     apt-get autoremove -qq -y && \
