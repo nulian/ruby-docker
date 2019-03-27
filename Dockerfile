@@ -41,3 +41,5 @@ RUN /bin/bash -c "git clone https://github.com/asdf-vm/asdf.git ~/.asdf && \
                   asdf install ruby 2.2.10 && \
                   asdf global ruby 2.2.10 && \
                   rm -rf  /tmp/*"
+
+RUN gem install bundler --no-rdoc --no-ri -v 1.17.3
