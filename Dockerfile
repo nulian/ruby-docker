@@ -1,10 +1,12 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
+
+ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -qq && \
     apt-get install -qq -y \
             build-essential \
             ca-certificates \
-            libssl-dev \
+            libssl1.0-dev \
             libreadline-dev \
             zlib1g-dev \
             curl \
