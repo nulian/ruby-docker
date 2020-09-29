@@ -30,7 +30,7 @@ ENV LANG C.UTF-8
 
 ENV PATH /home/default/.asdf/bin:/home/default/.asdf/shims:$PATH
 
-RUN /bin/bash -c "git clone https://github.com/asdf-vm/asdf.git home/default/.asdf && \
+RUN /bin/bash -c "git clone https://github.com/asdf-vm/asdf.git /home/default/.asdf && \
                   asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git && \
                   asdf install ruby 2.2.10 && \
                   asdf global ruby 2.2.10 && \
