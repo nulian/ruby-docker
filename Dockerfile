@@ -9,6 +9,7 @@ RUN apt-get update -qq && \
             zlib1g-dev \
             curl \
             git \
+            shared-mime-info \
             tzdata && \
     apt-get clean -qq -y && \
     apt-get autoclean -qq -y && \
