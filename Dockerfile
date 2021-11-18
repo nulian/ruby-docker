@@ -8,6 +8,7 @@ RUN mkdir -p /home/default
 RUN chown default:default -R /home/default
 
 RUN apt-get update -qq && \
+    apt-get upgrade -qq && \
     apt-get install -qq -y \
             build-essential \
             ca-certificates \
