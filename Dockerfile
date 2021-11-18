@@ -3,6 +3,7 @@ FROM ubuntu:18.04
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -qq && \
+    apt-get upgrade -qq && \
     apt-get install -qq -y \
             build-essential \
             ca-certificates \
